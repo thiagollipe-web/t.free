@@ -1,14 +1,16 @@
 ## Sobre o projeto
 
-**T.Free** é um catálogo de ferramentas de IA com opções gratuitas, faixas gratuitas e execução local. O aplicativo inteiro está em **`index.html`**, com HTML, CSS e JavaScript embutidos, sem bibliotecas externas, build ou backend obrigatório.
+**T.Free** reúne 32 ferramentas e é um catálogo de ferramentas de IA com opções gratuitas, faixas gratuitas e execução local. O aplicativo inteiro está em **`index.html`**, com HTML, CSS e JavaScript embutidos, sem bibliotecas externas, build ou backend obrigatório.
 
 Gratuito não significa ilimitado. Serviços podem exigir conta, aplicar cotas e restrições regionais, ou oferecer funções pagas. Ferramentas locais exigem instalação prévia, modelos compatíveis e recursos do computador. Licenças e comportamento variam por modelo; não há promessa universal de “sem censura”.
 
 ## Funcionalidades
 
 - Busca por nome, descrição e palavras-chave.
-- Filtros: Chat, Local/Offline, API/Dev, Imagem, Busca e Código.
-- Cards com selos, condições resumidas e links oficiais.
+- Filtros por categoria, incluindo chat, imagem, áudio, vídeo, design, estudos, pesquisa, escrita, código e ferramentas locais/API.
+- Filtro de acesso fácil para serviços usados diretamente no navegador.
+- Cards com logos incorporados, selos, condições resumidas e links oficiais.
+- Destaque para opções de acesso fácil no navegador, sem instalar aplicativos nem configurar uma API. Algumas exigem conta e têm cotas.
 - Chat-guia por palavras-chave que filtra o catálogo, sem usar API.
 - Modo opcional de conversa com **Ollama local**, com verificação de conexão e mensagens de erro.
 - Layout responsivo, navegação por teclado e conteúdo em português brasileiro.
@@ -68,3 +70,17 @@ Faça um fork, atualize o catálogo ou o código e abra um pull request. Não in
 ## Licença
 
 MIT, conforme a licença declarada pelo projeto. As ferramentas e modelos vinculados mantêm suas próprias licenças e condições.
+
+### Logos e marcas
+
+Logos são usados para identificar os serviços, sem vínculo ou endosso. Marcas pertencem aos respectivos titulares. Os ativos incorporados vêm de fontes oficiais, [Simple Icons](https://github.com/simple-icons/simple-icons) (biblioteca CC0) e [Lobe Icons](https://github.com/lobehub/lobe-icons) (biblioteca MIT). Fontes e avisos aplicáveis estão incorporados no HTML. Duck.ai utiliza a marca DuckDuckGo; Mistral Vibe utiliza a marca Mistral.
+
+## Monetização: preparação, não ativação
+
+O site tem espaço reservado para publicidade e informações de privacidade. **Não há anúncios Google ativos, ID de editor configurado ou aprovação do AdSense confirmada.** Não use IDs fictícios nem copie o código de outra pessoa.
+
+Para ativar, o proprietário deve escolher sua conta Google/AdSense existente (o Google permite uma conta por editor), concluir os dados e termos necessários, adicionar e verificar o site e obter aprovação. Depois, o código real deve ser integrado com as configurações de consentimento aplicáveis e a política de privacidade atualizada. Não confunda um espaço reservado com receita ativa.
+
+O endereço atual é um projeto em GitHub Pages, sob `thiagollipe-web.github.io/t.free/`. O cadastro e o `ads.txt` precisam respeitar o domínio reconhecido pelo Google e o local correto na raiz; não publicar um `ads.txt` fictício dentro da pasta do projeto. Se for necessário alterar o site raiz ou usar um domínio próprio, confirmar o destino antes.
+
+Referências oficiais: [criar conta](https://support.google.com/adsense/answer/7402253?hl=pt-BR), [qualificação](https://support.google.com/adsense/answer/9724?hl=pt-BR), [uma conta por editor](https://support.google.com/adsense/answer/9729?hl=pt-BR), [privacidade obrigatória](https://support.google.com/adsense/answer/1348695?hl=pt-BR). Aprovação e receita não são garantidas.
