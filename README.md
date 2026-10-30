@@ -1,19 +1,4 @@
-```markdown
-<div align="center">
 
-# ⚡ T.Free
-
-### Inteligência Artificial gratuita, sem censura e acessível no mundo todo 🌍
-
-**Um catálogo aberto de IAs gratuitas — em um único arquivo HTML, sem dependências, sem build, sem complicação.**
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
-[![Licença MIT](https://img.shields.io/badge/License-MIT-00c48c?style=for-the-badge)](#-licença)
-[![Sem dependências](https://img.shields.io/badge/dependencies-none-ff4d2e?style=for-the-badge)](#)
-
-</div>
 
 ---
 
