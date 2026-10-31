@@ -32,3 +32,5 @@
 .resource-links{display:grid;gap:10px;padding-left:20px;font-size:14px}
 @media(max-width:700px){.detail-layout{grid-template-columns:1fr;gap:24px}.detail-sidebar{order:-1}.detail-hero h1{letter-spacing:-2px}.chat-toggle{position:static;display:block;width:100%;margin:0 0 14px;box-shadow:none}.chat{bottom:16px;max-height:calc(100dvh - 32px)}}
 @media(max-width:480px){.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .button{width:100%}.compare-toolbar{padding:14px}}
+/* Original 56px headline overflows narrow screens; retain its identity without horizontal scrolling. */
+@media(max-width:420px){.hero h1{font-size:clamp(36px,12.9vw,54px)}}

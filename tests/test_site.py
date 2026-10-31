@@ -52,6 +52,6 @@ class BrowserTests(unittest.TestCase):
   self.assertGreater(page.locator('#compare-result').evaluate('(el)=>el.scrollWidth'),page.locator('#compare-result').evaluate('(el)=>el.clientWidth'))
   page.locator('#compare-result').evaluate('(el)=>el.scrollLeft=el.scrollWidth');self.assertGreater(page.locator('#compare-result').evaluate('(el)=>el.scrollLeft'),0);page.close()
  def test_no_javascript_and_responsive(self):
-  for width in (390,768,1440):
+  for width in (320,390,768,1440):
    context=self.browser.new_context(java_script_enabled=False,viewport={'width':width,'height':900});page=context.new_page();page.goto(self.url);self.assertEqual(page.locator('#grid .card:visible').count(),32);self.assertFalse(page.locator('#chat-toggle').is_visible());self.assertFalse(page.locator('#search').is_visible());self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width);page.locator('.tool-title').first.click();self.assertIn('chatgpt',page.url);self.assertTrue(page.get_by_role('heading',name='ChatGPT é gratuito?').is_visible());self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width);context.close()
 if __name__=='__main__':unittest.main(verbosity=2)
