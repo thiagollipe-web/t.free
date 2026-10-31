@@ -1,6 +1,6 @@
 # T.Free — catálogo estático de IA em português
 
-32 ferramentas, 32 fichas próprias e 12 páginas de categoria e 3 guias originais. As páginas são HTML real, acessíveis sem JavaScript. Busca, filtros, comparação de até três ferramentas e guia local são melhorias progressivas. Não há backend obrigatório, cadastro, analytics ou anúncios ativos.
+35 ferramentas, 35 fichas próprias e 13 páginas de categoria e 3 guias originais. As páginas são HTML real, acessíveis sem JavaScript. Busca, filtros, comparação de até três ferramentas e guia local são melhorias progressivas. Não há backend obrigatório, cadastro, analytics ou anúncios ativos.
 
 ## Desenvolvimento
 
@@ -30,7 +30,7 @@ Depois de editar fontes ou templates, rode o gerador e os testes. Não edite som
 
 ## SEO e GitHub Pages
 
-A origem configurada é `https://thiagollipe-web.github.io/t.free/`. Canonicals e URLs no sitemap respeitam o prefixo `/t.free/`. São 48 URLs HTML, sem dependência de renderização JavaScript para leitura dos cards e fichas. O sitemap não contém datas fictícias de atualização. Nenhuma nota/avaliação/preço foi inventado em dados estruturados.
+A origem configurada é `https://thiagollipe-web.github.io/t.free/`. Canonicals e URLs no sitemap respeitam o prefixo `/t.free/`. São 52 URLs HTML, sem dependência de renderização JavaScript para leitura dos cards e fichas. O sitemap não contém datas fictícias de atualização. Nenhuma nota/avaliação/preço foi inventado em dados estruturados.
 
 **robots.txt precisa estar na raiz do host**, `https://thiagollipe-web.github.io/robots.txt`. Um arquivo em `/t.free/robots.txt` não controla o rastreamento. Este projeto não altera o repositório do site raiz. Não é necessário ter robots.txt para permitir rastreamento; após publicação autorizada, envie diretamente `https://thiagollipe-web.github.io/t.free/sitemap.xml` ao Search Console da propriedade correta. Acesso à propriedade, verificação e envio dependem do proprietário. Não há garantia de indexação, posição ou tráfego.
 
@@ -54,4 +54,4 @@ O workflow `Catalogue quality` executa somente em pull requests para main: gera 
 
 ## Identidade visual
 
-A aparência original de T.Free (base `7abc261`) foi mantida por solicitação do responsável: CSS original, hero, navegação, cores e tipografia. `assets/redesign.css` contém somente compatibilidade para páginas estáticas e novos controles, sem substituir a identidade original. A expansão do catálogo/modelos está aguardando definição; as 32 ferramentas atuais foram preservadas.
+A aparência original de T.Free (base `7abc261`) foi mantida por solicitação do responsável: CSS original, hero, navegação, cores e tipografia. `assets/redesign.css` contém somente compatibilidade para páginas estáticas e novos controles, sem substituir a identidade original. A expansão do catálogo/modelos está aguardando definição; as 32 ferramentas existentes foram preservadas; Hermes Agent, OpenCode e Morphic foram acrescentados com fontes oficiais, tipo e dependências explícitas. Modelos de pesos não foram adicionados.

@@ -30,5 +30,8 @@
   "Consensus": "assets/logos/consensus.svg",
   "QuillBot": "assets/logos/quillbot.svg",
   "DeepL Write": "assets/logos/deepl-write.svg",
-  "ResearchRabbit": "assets/logos/researchrabbit.png"
+  "ResearchRabbit": "assets/logos/researchrabbit.png",
+  "Hermes Agent": "assets/logos/hermes-agent.svg",
+  "OpenCode": "assets/logos/opencode.svg",
+  "Morphic": "assets/logos/morphic.svg"
 }
