@@ -51,3 +51,7 @@ Sem cookies próprios, armazenamento persistente, rastreadores ou scripts de pub
 ## CI de revisão
 
 O workflow `Catalogue quality` executa somente em pull requests para main: gera o site, testa sintaxe/SEO/links, busca/filtros/comparação/guia e layouts sem JS em Chromium, sob o prefixo `/t.free/`. Também salva screenshots para revisão por 7 dias. Permissão apenas de leitura; nenhum deploy, secret ou aprovação automática. Para reproduzir, instale `playwright==1.62.0`, execute `python -m playwright install chromium` e rode os testes. Screenshots: `python scripts/screenshots.py`.
+
+## Identidade visual
+
+A aparência original de T.Free (base `7abc261`) foi mantida por solicitação do responsável: CSS original, hero, navegação, cores e tipografia. `assets/redesign.css` contém somente compatibilidade para páginas estáticas e novos controles, sem substituir a identidade original. A expansão do catálogo/modelos está aguardando definição; as 32 ferramentas atuais foram preservadas.

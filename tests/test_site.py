@@ -15,6 +15,12 @@ class StaticTests(unittest.TestCase):
     if url.startswith(('https:','http:','#')):continue
     target=(p.parent/unquote(url.split('#')[0])).resolve()
     self.assertTrue(target.exists(),str(p)+' broken '+url)
+ def test_original_visual_identity(self):
+  import hashlib
+  self.assertEqual(hashlib.sha256((ROOT/'assets/legacy.css').read_bytes()).hexdigest(), '5fc175a331dc659d900aba9de15c8dd4368340dc10439669c533290166112de1')
+  home=(ROOT/'index.html').read_text();self.assertIn('<h1>Sua próxima IA.<br><em>Sem complicação.</em></h1>',home)
+  self.assertIn('MENOS BARREIRAS',home.upper());self.assertIn('Aberto para descobrir',home)
+  self.assertNotIn(':root', (ROOT/'assets/redesign.css').read_text())
  def test_sitemap(self):
   ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'};tree=ET.parse(ROOT/'sitemap.xml');urls=[x.text for x in tree.findall('.//s:loc',ns)];self.assertEqual(len(urls),48);self.assertEqual(len(set(urls)),48)
   self.assertTrue(all(x.startswith('https://thiagollipe-web.github.io/t.free/') for x in urls))
