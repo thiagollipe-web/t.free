@@ -8,7 +8,7 @@ const categories=['Todas','Acesso fácil',...new Set(catalogue.map(a=>a.category
 for(const c of categories){const b=document.createElement('button');b.type='button';b.className='filter';b.textContent=c;b.setAttribute('aria-pressed',String(c===category));b.addEventListener('click',()=>{category=c;render()});$('filters').append(b)}
 function render(){const terms=normalize($('search').value.trim()).split(/\s+/).filter(Boolean);let count=0;for(const card of cards){card.hidden=!((category==='Todas'||(category==='Acesso fácil'?card.dataset.easy==='true':card.dataset.category===category))&&terms.every(t=>normalize(card.dataset.search).includes(t)));if(!card.hidden)count++}$('empty').hidden=count!==0;$('count').textContent=count+' de '+catalogue.length+' ferramentas';[...$('filters').children].forEach(b=>b.setAttribute('aria-pressed',String(b.textContent===category)))}
 $('search').addEventListener('input',render);$('clear').addEventListener('click',()=>{category='Todas';$('search').value='';render();$('search').focus()});
-document.querySelector('.searchbox').hidden=false;$('filters').hidden=false;$('chat-toggle').hidden=false;
+document.querySelector('.searchbox').hidden=false;$('filters').hidden=false;$('chat-toggle').hidden=false;document.querySelector('.searchbox').before($('chat-toggle'));
 const picks=[...document.querySelectorAll('#grid .compare-pick input')];
 document.querySelectorAll('#grid .compare-pick').forEach(x=>x.hidden=false);$('comparison').hidden=false;
 function chosen(){return picks.filter(x=>x.checked).map(x=>catalogue.find(a=>a.slug===x.value))}

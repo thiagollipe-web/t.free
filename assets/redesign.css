@@ -119,3 +119,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}.card:hover{transform:none}}
 .compare-scroll-hint{width:100%;margin:8px 0 0;color:var(--muted);font-size:12px}
 @media(max-width:480px){.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .button{flex:auto;width:100%}.hero-actions .button-secondary{text-align:center;padding:8px}.compare-table caption{white-space:normal}}
+.category-links-title{font-size:12px;color:var(--muted);margin:8px 0}
+.breadcrumbs{height:auto}
+@media(max-width:680px){.chat-toggle{position:static;display:block;width:100%;margin:0 0 14px;box-shadow:none}.chat{bottom:16px;max-height:calc(100dvh - 32px)}}
