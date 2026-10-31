@@ -1,0 +1,201 @@
+
+Brand artwork embedded for identification only. Trademarks belong to their respective owners; no affiliation or endorsement.
+Official assets and Simple Icons (CC0-1.0):
+{
+  "chatgpt": "https://chatgpt.com/cdn/assets/favicon.6a33781f61.svg",
+  "googleaistudio": "https://www.gstatic.com/images/branding/productlogos/ai_studio/v1/web-96dp/logo_ai_studio_color_1x_web_96dp.png",
+  "groq": "https://groq.com/favicon.svg",
+  "comfyui": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI_frontend/main/public/assets/images/comfy-logo-single.svg",
+  "continue": "https://www.continue.dev/favicon.png",
+  "copilot": "https://copilot.microsoft.com/static/cmc/favicon.svg",
+  "jan": "https://raw.githubusercontent.com/janhq/jan/main/docs/src/assets/icons/logo-jan.svg",
+  "googlegemini": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googlegemini.svg",
+  "claude": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/claude.svg",
+  "ollama": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ollama.svg",
+  "lmstudio": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/lmstudio.svg",
+  "huggingface": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/huggingface.svg",
+  "perplexity": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/perplexity.svg"
+}
+Lobe SVG dimensions normalized from 1em to 24px for portable image rendering; paths/colors unchanged.
+New logo provenance:
+{
+  "retrievedAt": "2026-10-30",
+  "caveat": "Third-party logo libraries reproduce brand marks; trademark rights remain with owners. These are not a claim of affiliation or endorsement. Duck.ai uses the accepted DuckDuckGo brand mark. Mistral icon is corporate brand, not a separately asserted Vibe mark.",
+  "icons": [
+    {
+      "file": "copilot.svg",
+      "source": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/copilot-color.svg",
+      "blobSha": "6085804d0280af6e2053a2948d4b23dacca75ff2",
+      "license": "MIT (library)",
+      "modified": false
+    },
+    {
+      "file": "mistral.svg",
+      "source": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/mistral-color.svg",
+      "blobSha": "8e03e244bf1035d2d4ea81e1c226a4c8c4ebd3c4",
+      "license": "MIT (library)",
+      "modified": false
+    },
+    {
+      "file": "deepseek.svg",
+      "source": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/deepseek-color.svg",
+      "blobSha": "3fc2302406e22f064f3efda71d8a7bcf0fc1dd41",
+      "license": "MIT (library)",
+      "modified": false
+    },
+    {
+      "file": "qwen.svg",
+      "source": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/qwen-color.svg",
+      "blobSha": "93d3311ac9caa6ab8d1887921922e0883daeec1c",
+      "license": "MIT (library)",
+      "modified": false
+    },
+    {
+      "file": "duck.svg",
+      "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/duckduckgo.svg",
+      "blobSha": "7b51a80e84bb05d41c4e64e2260b7042582f8286",
+      "license": "CC0-1.0 (library)",
+      "modified": false
+    }
+  ]
+}
+
+Lobe Icons license:
+MIT License
+
+Copyright (c) 2023 LobeHub
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+Simple Icons CC0-1.0: https://creativecommons.org/publicdomain/zero/1.0/
+Jan official artwork source: https://github.com/janhq/jan/blob/main/docs/src/assets/icons/logo-jan.svg
+ComfyUI official artwork source: https://github.com/Comfy-Org/ComfyUI_frontend/blob/main/public/assets/images/comfy-logo-single.svg
+
+
+ Additional brand artwork sources and license notices. Brand rights remain with holders. SVG em dimensions normalized to24px where needed; paths/colors unchanged.
+provenance-missing.json
+{
+  "retrievedAt": "2026-10-30",
+  "icons": [
+    {
+      "file": "canva.svg",
+      "source": "https://github.com/pheralb/svgl/blob/main/static/library/canva.svg",
+      "blobSha": "a0b5e15c667222b45de7724427f0404e26b94000",
+      "license": "SVGL library MIT; brand rights retained",
+      "modified": false
+    },
+    {
+      "file": "clipchamp.svg",
+      "source": "https://github.com/pheralb/svgl/blob/main/static/library/microsoft-clipchamp.svg",
+      "blobSha": "a5ccfd1542d6099f576ef06bca1d22375232b5fc",
+      "license": "SVGL library MIT; brand rights retained",
+      "modified": false
+    },
+    {
+      "file": "designer.svg",
+      "source": "https://github.com/pheralb/svgl/blob/main/static/library/microsoft-designer.svg",
+      "blobSha": "1df8ec58f6553cd9cf0a0b4a883b3d01fbdef94d",
+      "license": "SVGL library MIT; brand rights retained",
+      "modified": false
+    },
+    {
+      "file": "leonardo.png",
+      "source": "https://leonardo.ai/images/leonardo_favicon.png",
+      "discoveredFrom": "https://leonardo.ai/ (rel=icon)",
+      "license": "Official brand asset; no redistribution license asserted, trademark rights retained",
+      "modified": false
+    }
+  ]
+}
+
+provenance-lobe.json
+{"retrievedAt":"2026-10-30","caveat":"Brand trademarks remain with owners.","icons":[{"file":"adobefirefly.svg","source":"https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/adobefirefly-color.svg","blobSha":"c6f8a66c081d759e303013d0d17e66c491e66976","license":"MIT (library)","modified":false},{"file":"ideogram.svg","source":"https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/ideogram.svg","blobSha":"ba6f7f6b9c17fed9de4ba884ca49d462bcb7dc2c","license":"MIT (library)","modified":false},{"file":"elevenlabs.svg","source":"https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/elevenlabs.svg","blobSha":"3c2128bfb4ee16e9fd6965d52681fefcd68a811a","license":"MIT (library)","modified":false},{"file":"suno.svg","source":"https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/suno.svg","blobSha":"f73f29cdc2bbab732f3fac69b4fe7b1b1270684a","license":"MIT (library)","modified":false},{"file":"krea.svg","source":"https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/krea.svg","blobSha":"dacf2586304cd80ff897fe0c09066b4af3c1a4a3","license":"MIT (library)","modified":false},{"file":"deepl.svg","source":"https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/deepl-color.svg","blobSha":"91fb560f6724081aa37e611e48e7db0e125fc708","license":"MIT (library)","modified":false}]}
+provenance-official.json
+[
+  {
+    "file": "notebook.svg",
+    "source": "https://www.gstatic.com/tailwind/_/static/branding/v6/light_mode/favicon/favicon.svg",
+    "bytes": 2470,
+    "content_type": "image/svg+xml",
+    "license": "Brand-owned asset; trademark rights retained"
+  },
+  {
+    "file": "consensus.svg",
+    "source": "https://consensus.app/favicon.svg",
+    "bytes": 1348,
+    "content_type": "image/svg+xml",
+    "license": "Brand-owned asset; trademark rights retained"
+  },
+  {
+    "file": "quillbot.svg",
+    "source": "https://quillbot.com/rebrand/icon.svg",
+    "bytes": 1834,
+    "content_type": "image/svg+xml",
+    "license": "Brand-owned asset; trademark rights retained"
+  },
+  {
+    "file": "researchrabbit.png",
+    "source": "https://cdn.prod.website-files.com/68367775ca3b1655a71e1698/68f169d618fea3828326bbe2_RR_icon_256.png",
+    "bytes": 11462,
+    "content_type": "image/png",
+    "license": "Brand-owned asset; trademark rights retained"
+  }
+]
+provenance-elicit.json
+{
+  "retrievedAt": "2026-10-30",
+  "file": "elicit.png",
+  "source": "https://framerusercontent.com/images/GWXKVhGBLC34aTLlmLIMsRVb4.png",
+  "discoveredFrom": "https://elicit.com/ (rel=apple-touch-icon)",
+  "sha256": "18789ffe6f238d1768fc369b096f36d2df967603847814e8b9a015ea42d943e2",
+  "format": "PNG",
+  "width": 180,
+  "height": 180,
+  "modified": false,
+  "license": "Official brand asset; no redistribution license asserted; trademark rights retained",
+  "safety": "PNG signature verified; raster image visually inspected, no SVG external-reference risk"
+}
+
+SVGL-MIT-LICENSE.txt
+MIT License
+
+Copyright (c) 2022 Pablo Hdez
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
