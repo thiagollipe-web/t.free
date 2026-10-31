@@ -38,6 +38,13 @@ class BrowserTests(unittest.TestCase):
   page.locator('#compare-clear').click();self.assertFalse(page.locator('#compare-result').is_visible());self.assertFalse(checks.nth(3).is_disabled())
   page.locator('#chat-toggle').click();page.locator('#question').fill('quero uma IA offline');page.locator('#send').click();self.assertEqual(page.locator('#grid .card:visible').count(),3);page.keyboard.press('Escape');self.assertFalse(page.locator('#chat').is_visible());self.assertEqual(page.locator('#chat-toggle').get_attribute('aria-expanded'),'false')
   page.locator('#chat-toggle').click();page.locator('.settings summary').click();page.locator('#mode').select_option('ollama');page.locator('#endpoint').fill('https://example.com');page.locator('#test').click();page.wait_for_selector('.bubble.error');self.assertIn('somente localhost',page.locator('.bubble.error').last.inner_text());self.assertEqual(errors,[]);page.close()
+ def test_mobile_comparison_and_keyboard(self):
+  page=self.browser.new_page(viewport={'width':390,'height':844});page.goto(self.url);page.wait_for_selector('#filters button')
+  page.keyboard.press('Tab');self.assertEqual(page.locator(':focus').inner_text(),'Pular para o catálogo');page.keyboard.press('Enter');self.assertTrue(page.url.endswith('#catalogue'))
+  checks=page.locator('#grid .compare-pick input');checks.nth(0).focus();page.keyboard.press('Space');checks.nth(1).focus();page.keyboard.press('Space');page.locator('#compare-open').focus();page.keyboard.press('Enter')
+  self.assertTrue(page.locator('#compare-result table').is_visible());self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),390)
+  self.assertGreater(page.locator('#compare-result').evaluate('(el)=>el.scrollWidth'),page.locator('#compare-result').evaluate('(el)=>el.clientWidth'))
+  page.locator('#compare-result').evaluate('(el)=>el.scrollLeft=el.scrollWidth');self.assertGreater(page.locator('#compare-result').evaluate('(el)=>el.scrollLeft'),0);page.close()
  def test_no_javascript_and_responsive(self):
   for width in (390,768,1440):
    context=self.browser.new_context(java_script_enabled=False,viewport={'width':width,'height':900});page=context.new_page();page.goto(self.url);self.assertEqual(page.locator('#grid .card:visible').count(),32);self.assertFalse(page.locator('#chat-toggle').is_visible());self.assertFalse(page.locator('#search').is_visible());self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width);page.locator('.tool-title').first.click();self.assertIn('chatgpt',page.url);self.assertTrue(page.get_by_role('heading',name='ChatGPT é gratuito?').is_visible());self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width);context.close()
