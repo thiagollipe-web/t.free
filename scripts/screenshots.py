@@ -20,4 +20,4 @@ with tempfile.TemporaryDirectory() as folder:
     page.goto(f'http://127.0.0.1:{server.server_port}/t.free/ferramentas/chatgpt/')
     page.screenshot(path=str(output/(label+'-tool.png')),full_page=True);page.close()
    browser.close()
- finally:server.shutdown()
+ finally:server.shutdown();server.server_close()

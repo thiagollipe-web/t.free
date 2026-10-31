@@ -26,11 +26,12 @@ class BrowserTests(unittest.TestCase):
   cls.server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(http.server.SimpleHTTPRequestHandler,directory=cls.folder.name))
   threading.Thread(target=cls.server.serve_forever,daemon=True).start();cls.url="http://127.0.0.1:"+str(cls.server.server_port)+"/t.free/"
  @classmethod
- def tearDownClass(cls):cls.server.shutdown();cls.browser.close();cls.p.stop();cls.folder.cleanup()
+ def tearDownClass(cls):cls.server.shutdown();cls.server.server_close();cls.browser.close();cls.p.stop();cls.folder.cleanup()
  def test_search_filter_comparison_and_chat(self):
   page=self.browser.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)));page.goto(self.url);page.wait_for_selector('#filters button')
   self.assertEqual(page.locator('#grid .card:visible').count(),32)
-  page.locator('#search').fill('áudio');self.assertEqual(page.locator('#grid .card:visible').count(),2)
+  page.locator('#search').fill('áudio');self.assertEqual(set(page.locator('#grid .card:visible').evaluate_all('(cards) => cards.map(card => card.dataset.name)')), {'ElevenLabs','Suno','Microsoft Clipchamp','Gemini Notebook (antigo NotebookLM)'})
+  page.locator('#clear').click();page.get_by_role('button',name='Áudio',exact=True).click();self.assertEqual(page.locator('#grid .card:visible').count(),2)
   page.locator('#clear').click();page.get_by_role('button',name='Pesquisa',exact=True).click();self.assertEqual(page.locator('#grid .card:visible').count(),3)
   page.locator('#clear').click();page.locator('#search').fill('zzzinexistente');self.assertTrue(page.locator('#empty').is_visible());page.locator('#clear').click()
   checks=page.locator('#grid .compare-pick input');checks.nth(0).check();checks.nth(1).check();checks.nth(2).check();self.assertTrue(checks.nth(3).is_disabled());page.locator('#compare-open').click();self.assertTrue(page.locator('#compare-result table').is_visible());self.assertEqual(page.locator('#compare-result thead th').count(),4)
