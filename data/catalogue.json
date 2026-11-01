@@ -895,8 +895,8 @@
     "url": "https://opencode.ai/",
     "keywords": "agente programação terminal código desenvolvimento",
     "easy": false,
-    "conditions": "O software é aberto, mas o modelo conectado não é automaticamente gratuito. Provedores podem exigir conta, assinatura ou chave de API. A integração com Ollama local exige instalação e recursos próprios. Não há instalação automática pelo T.Free.",
-    "source": "https://opencode.ai/docs/providers/",
+    "conditions": "O software é aberto sob licença MIT e oferece uma seleção de modelos gratuitos, conforme a oferta atual. Outros provedores podem exigir conta, assinatura ou chave de API. Modelos locais exigem recursos próprios. O site informa condições próprias de uso de dados nos modelos gratuitos: confira a política antes de enviar conteúdo sensível. Não há instalação automática pelo T.Free.",
+    "source": "https://opencode.ai/",
     "kind": "agent",
     "execution": "hybrid",
     "aliases": [
@@ -915,8 +915,8 @@
     "reviewedAt": "2026-10-31",
     "costs": {
       "softwareFee": null,
-      "software": "Software de código aberto; consulte a licença e a documentação oficiais.",
-      "model": "A API, conta ou assinatura depende do provedor. Também pode usar Ollama local compatível.",
+      "software": "Software sob licença MIT, gratuito conforme os termos da licença.",
+      "model": "Há uma seleção de modelos gratuitos oferecida pelo projeto. API, conta ou assinatura externa depende do provedor; também pode usar Ollama local compatível.",
       "hosting": "Exige instalação e configuração do ambiente; modelos locais usam recursos do computador.",
       "dependencies": [
         "Provedor de API/assinatura escolhido ou modelo local",
