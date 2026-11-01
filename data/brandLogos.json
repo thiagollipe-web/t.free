@@ -1,7 +1,7 @@
 {
-  "ChatGPT": "assets/logos/chatgpt.svg",
+  "ChatGPT": "assets/logos/chatgpt-reference.webp",
   "Gemini": "assets/logos/gemini.svg",
-  "Claude": "assets/logos/claude.svg",
+  "Claude": "assets/logos/claude-reference.webp",
   "Ollama": "assets/logos/ollama.svg",
   "LM Studio": "assets/logos/lm-studio.svg",
   "Jan": "assets/logos/jan.svg",
@@ -9,7 +9,7 @@
   "GroqCloud": "assets/logos/groqcloud.svg",
   "Hugging Face": "assets/logos/hugging-face.svg",
   "ComfyUI": "assets/logos/comfyui.svg",
-  "Perplexity": "assets/logos/perplexity.svg",
+  "Perplexity": "assets/logos/perplexity-reference.webp",
   "Continue": "assets/logos/continue.png",
   "Duck.ai": "assets/logos/duck-ai.svg",
   "Microsoft Copilot": "assets/logos/microsoft-copilot.svg",
@@ -31,7 +31,7 @@
   "QuillBot": "assets/logos/quillbot.svg",
   "DeepL Write": "assets/logos/deepl-write.svg",
   "ResearchRabbit": "assets/logos/researchrabbit.png",
-  "Hermes Agent": "assets/logos/hermes-agent.svg",
-  "OpenCode": "assets/logos/opencode.svg",
-  "Morphic": "assets/logos/morphic.svg"
+  "Hermes Agent": "assets/logos/hermes-agent-reference.webp",
+  "OpenCode": "assets/logos/opencode-reference.webp",
+  "Morphic": "assets/logos/morphic-reference.webp"
 }

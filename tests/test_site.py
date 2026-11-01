@@ -22,6 +22,13 @@ class StaticTests(unittest.TestCase):
   self.assertNotIn('class="hero-art"',home)
   self.assertIn('Sua seleção',home)
   self.assertTrue((ROOT/'assets/caramelo.svg').exists())
+ def test_reference_icons_have_matching_provenance(self):
+  sources=json.loads((ROOT/'data/iconSources.json').read_text());logos=json.loads((ROOT/'data/brandLogos.json').read_text())
+  self.assertEqual(set(sources),{'Hermes Agent','OpenCode','Morphic','ChatGPT','Claude','Perplexity'})
+  for name,info in sources.items():
+   self.assertEqual(logos[name],info['localPath']);self.assertTrue(info['sourceUrl'].startswith('https://gratos.app/logos/'))
+   self.assertTrue((ROOT/info['localPath']).exists())
+   self.assertIn(info['localPath'],(ROOT/'index.html').read_text())
  def test_sitemap(self):
   ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'};tree=ET.parse(ROOT/'sitemap.xml');urls=[x.text for x in tree.findall('.//s:loc',ns)];self.assertEqual(len(urls),52);self.assertEqual(len(set(urls)),52)
   self.assertTrue(all(x.startswith('https://thiagollipe-web.github.io/t.free/') for x in urls))

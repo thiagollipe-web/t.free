@@ -20,6 +20,7 @@ Abra http://127.0.0.1:8765/. Para o site baixado, preserve a estrutura de pastas
 
 - `data/catalogue.json`: conteúdo, condições e fontes. Não invente cotas ou avaliações.
 - `data/brandLogos.json`: caminhos dos logos locais; atribuições em `ASSET-NOTICES.txt`.
+- `data/iconSources.json`: proveniência e hashes dos seis ícones correspondentes à referência.
 - `scripts/build.py`: geração das páginas, metadados e sitemap.
 - `templates/base.html`: estrutura, transparência e conteúdo institucional preservado.
 - `templates/catalogue.js`: busca, filtros e comparação; compilado para `assets/catalogue.js`.
@@ -56,7 +57,7 @@ O workflow `Catalogue quality` executa somente em pull requests para main: gera 
 
 ## Identidade visual — preview Caramelo
 
-A branch `feat/visual-caramelo` propõe a nova direção solicitada após a publicação de PR #1: hero centralizado, tipografia serifada, navegação compacta, grade leve, cartões brancos em duas colunas e cachorro caramelo original. A organização visual pública do Gratos foi observada como referência; nenhum texto, CSS, código ou arte daquele site foi importado. O mascote foi desenhado em SVG para o T.Free. Textos continuam originais em português, com condições e fontes do catálogo.
+A branch `feat/visual-caramelo` propõe a nova direção solicitada após a publicação de PR #1: hero centralizado, tipografia serifada, navegação compacta, grade leve, cartões brancos em duas colunas e cachorro caramelo original. A organização visual pública do Gratos foi observada como referência; nenhum texto, CSS ou código daquele site foi importado. Após correção solicitada, seis ícones correspondentes foram obtidos da mídia pública da referência, com autorização declarada pelo responsável e proveniência em `data/iconSources.json`. O mascote foi desenhado em SVG para o T.Free. Textos continuam originais em português, com condições e fontes do catálogo.
 
 Esta proposta permanece em revisão e não substitui o site publicado sem aprovação visual explícita. Não inclui estatísticas inventadas, economia monetária sem evidência, patrocínio ou coleta de e-mails. O painel compara ferramentas e custos qualitativos.
 
