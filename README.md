@@ -62,3 +62,11 @@ A branch `feat/visual-caramelo` propõe a nova direção solicitada após a publ
 Esta proposta permanece em revisão e não substitui o site publicado sem aprovação visual explícita. Não inclui estatísticas inventadas, economia monetária sem evidência, patrocínio ou coleta de e-mails. O painel compara ferramentas e custos qualitativos.
 
 As 35 ferramentas e 52 URLs foram preservadas. Hermes Agent, OpenCode e Morphic são apps/agentes com dependências explícitas, não pesos de modelos.
+
+## Prompts assistidos — revisão
+
+Quatro roteiros em português para três ferramentas: preparar Hermes Agent, revisar permissões Hermes, preparar OpenCode e preparar Morphic. Conteúdo em `data/prompts.json`, com documentação oficial e referência pública da finalidade. São adaptações editoriais, não prova de instalação testada. Nenhum roteiro de instalação foi inventado para os demais serviços online.
+
+Home e três fichas exibem texto selecionável sem JavaScript. Com JavaScript, a seleção de roteiros é independente da comparação: preview em ordem editorial determinística, remoção por chip, texto integral e cópia por Clipboard API. Um fechamento de segurança é acrescentado uma única vez. Se o navegador negar a cópia, o texto é selecionado e aparece instrução de cópia manual; não declaramos sucesso falso. Escape fecha o preview e devolve o foco. O preview é somente leitura.
+
+O site não instala, executa comandos, abre serviços, envia o prompt a provedores nem coleta chaves. O usuário escolhe onde colar e deve revisar custos, dados e permissões antes de autorizar qualquer ação do assistente. Esta versão exige revisão e autorização de publicação separada.
