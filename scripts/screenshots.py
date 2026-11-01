@@ -17,6 +17,8 @@ with tempfile.TemporaryDirectory() as folder:
     page.screenshot(path=str(output/(label+'-home.png')),full_page=True)
     page.screenshot(path=str(output/(label+'-hero.png')))
     page.locator('#grid').screenshot(path=str(output/(label+'-cards.png')))
+    page.locator('#grid .card').first.scroll_into_view_if_needed()
+    page.screenshot(path=str(output/(label+'-cards-top.png')))
     page.locator('#grid .compare-pick input').nth(0).check();page.locator('#grid .compare-pick input').nth(1).check();page.locator('#compare-open').click()
     page.locator('#comparison').screenshot(path=str(output/(label+'-comparison.png')))
     page.goto(f'http://127.0.0.1:{server.server_port}/t.free/ferramentas/chatgpt/')

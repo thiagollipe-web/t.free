@@ -24,7 +24,9 @@ Abra http://127.0.0.1:8765/. Para o site baixado, preserve a estrutura de pastas
 - `templates/base.html`: estrutura, transparência e conteúdo institucional preservado.
 - `templates/catalogue.js`: busca, filtros e comparação; compilado para `assets/catalogue.js`.
 - `assets/chat.js`: guia por regras e integração opcional com Ollama local.
-- `assets/redesign.css`: identidade visual e responsive.
+- `assets/caramelo.css`: nova composição visual e responsive em revisão.
+- `assets/caramelo.svg`: mascote vetorial original T.Free.
+- `assets/legacy.css` e `assets/redesign.css`: estilos de base e compatibilidade.
 
 Depois de editar fontes ou templates, rode o gerador e os testes. Não edite somente HTML gerado, pois a próxima geração o substitui.
 
@@ -52,6 +54,10 @@ Sem cookies próprios, armazenamento persistente, rastreadores ou scripts de pub
 
 O workflow `Catalogue quality` executa somente em pull requests para main: gera o site, testa sintaxe/SEO/links, busca/filtros/comparação/guia e layouts sem JS em Chromium, sob o prefixo `/t.free/`. Também salva screenshots para revisão por 7 dias. Permissão apenas de leitura; nenhum deploy, secret ou aprovação automática. Para reproduzir, instale `playwright==1.62.0`, execute `python -m playwright install chromium` e rode os testes. Screenshots: `python scripts/screenshots.py`.
 
-## Identidade visual
+## Identidade visual — preview Caramelo
 
-A aparência original de T.Free (base `7abc261`) foi mantida por solicitação do responsável: CSS original, hero, navegação, cores e tipografia. `assets/redesign.css` contém somente compatibilidade para páginas estáticas e novos controles, sem substituir a identidade original. A expansão do catálogo/modelos está aguardando definição; as 32 ferramentas existentes foram preservadas; Hermes Agent, OpenCode e Morphic foram acrescentados com fontes oficiais, tipo e dependências explícitas. Modelos de pesos não foram adicionados.
+A branch `feat/visual-caramelo` propõe a nova direção solicitada após a publicação de PR #1: hero centralizado, tipografia serifada, navegação compacta, grade leve, cartões brancos em duas colunas e cachorro caramelo original. A organização visual pública do Gratos foi observada como referência; nenhum texto, CSS, código ou arte daquele site foi importado. O mascote foi desenhado em SVG para o T.Free. Textos continuam originais em português, com condições e fontes do catálogo.
+
+Esta proposta permanece em revisão e não substitui o site publicado sem aprovação visual explícita. Não inclui estatísticas inventadas, economia monetária sem evidência, patrocínio ou coleta de e-mails. O painel compara ferramentas e custos qualitativos.
+
+As 35 ferramentas e 52 URLs foram preservadas. Hermes Agent, OpenCode e Morphic são apps/agentes com dependências explícitas, não pesos de modelos.
