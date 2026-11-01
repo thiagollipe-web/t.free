@@ -1,0 +1,50 @@
+{
+  "Hermes Agent": {
+    "localPath": "assets/logos/hermes-agent-reference.webp",
+    "sourceUrl": "https://gratos.app/logos/hermes-agent-d3bf4829.webp",
+    "observedOn": "https://gratos.app/alternatives",
+    "retrievedAt": "2026-11-01",
+    "sha256": "d3bf4829d23aeabdff29f55bc65640c0deb199ad877c3021dc9942cf0b337c74",
+    "rightsNote": "Marca pertence ao respectivo titular. Reutilização da referência autorizada conforme declaração do responsável pelo T.Free; não representa verificação independente de licença nem endosso."
+  },
+  "OpenCode": {
+    "localPath": "assets/logos/opencode-reference.webp",
+    "sourceUrl": "https://gratos.app/logos/opencode-6e8ac2b7.webp",
+    "observedOn": "https://gratos.app/alternatives",
+    "retrievedAt": "2026-11-01",
+    "sha256": "6e8ac2b71e898990d8486230381ad781c7bc8d5ef8a1d9fb3266263281e558e8",
+    "rightsNote": "Marca pertence ao respectivo titular. Reutilização da referência autorizada conforme declaração do responsável pelo T.Free; não representa verificação independente de licença nem endosso."
+  },
+  "Morphic": {
+    "localPath": "assets/logos/morphic-reference.webp",
+    "sourceUrl": "https://gratos.app/logos/morphic-7a573f2f.webp",
+    "observedOn": "https://gratos.app/alternatives",
+    "retrievedAt": "2026-11-01",
+    "sha256": "7a573f2f2a6551512b42429971b008975a4cf25d8e2e9fb8e0833d340cd98ca7",
+    "rightsNote": "Marca pertence ao respectivo titular. Reutilização da referência autorizada conforme declaração do responsável pelo T.Free; não representa verificação independente de licença nem endosso."
+  },
+  "ChatGPT": {
+    "localPath": "assets/logos/chatgpt-reference.webp",
+    "sourceUrl": "https://gratos.app/logos/chatgpt-6e2cc669.webp",
+    "observedOn": "https://gratos.app/alternatives",
+    "retrievedAt": "2026-11-01",
+    "sha256": "6e2cc6699e6c122e4920dc060ed44bfb6ac6af4c44cd7c706f56831093b6a8ce",
+    "rightsNote": "Marca pertence ao respectivo titular. Reutilização da referência autorizada conforme declaração do responsável pelo T.Free; não representa verificação independente de licença nem endosso."
+  },
+  "Claude": {
+    "localPath": "assets/logos/claude-reference.webp",
+    "sourceUrl": "https://gratos.app/logos/claude-d2a6e42a.webp",
+    "observedOn": "https://gratos.app/alternatives",
+    "retrievedAt": "2026-11-01",
+    "sha256": "d2a6e42a9458c7df0afa4f80182f04dffeca7f3b3834ea9a8da8c7053105291e",
+    "rightsNote": "Marca pertence ao respectivo titular. Reutilização da referência autorizada conforme declaração do responsável pelo T.Free; não representa verificação independente de licença nem endosso."
+  },
+  "Perplexity": {
+    "localPath": "assets/logos/perplexity-reference.webp",
+    "sourceUrl": "https://gratos.app/logos/perplexity-2c56765d.webp",
+    "observedOn": "https://gratos.app/alternatives",
+    "retrievedAt": "2026-11-01",
+    "sha256": "2c56765d941936ce07c27afc98a8c2872f62ec821b92bc83c0412f3cffb0dabd",
+    "rightsNote": "Marca pertence ao respectivo titular. Reutilização da referência autorizada conforme declaração do responsável pelo T.Free; não representa verificação independente de licença nem endosso."
+  }
+}

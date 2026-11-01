@@ -201,3 +201,8 @@ SOFTWARE.
 
 
 Hermes Agent, OpenCode e Morphic: monogramas de identificação originais do T.Free, não logos oficiais nem indicação de parceria.
+
+assets/caramelo.svg: ilustração vetorial original criada para T.Free. Não deriva do mascote Gratos.
+
+Ícones correspondentes à referência Gratos, atualização 01/11/2026:
+Arquivos *-reference.webp copiados sem alteração visual através da mídia pública de https://gratos.app/alternatives. Mapeamento, URL exata e SHA256 em data/iconSources.json. Hermes Agent, OpenCode, Morphic, ChatGPT, Claude e Perplexity identificam seus respectivos produtos. Marcas pertencem aos titulares. O responsável pelo T.Free declarou possuir autorização para reutilização; essa declaração não equivale a validação jurídica independente. Nenhum vínculo ou endosso é sugerido. Monogramas anteriores dessas três novas ferramentas não são mais usados.
