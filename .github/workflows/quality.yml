@@ -1,0 +1,44 @@
+name: Catalogue quality
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: catalogue-quality-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  browser-and-static:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Install browser test tools
+        run: |
+          python -m pip install playwright==1.62.0
+          python -m playwright install --with-deps chromium
+      - name: Build and check generated content
+        run: |
+          python scripts/build.py
+          git diff --exit-code
+          node --check assets/catalogue.js
+          node --check assets/chat.js
+          node tests/test_local_safety.js
+      - name: Test browser flows, no-JS and static SEO
+        run: python -m unittest discover -s tests -v
+      - name: Capture review screenshots
+        if: always()
+        run: python scripts/screenshots.py
+      - name: Upload review evidence (no deployment)
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: tfree-browser-review
+          path: screenshots/
+          retention-days: 7
+          if-no-files-found: warn

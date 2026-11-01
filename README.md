@@ -1,86 +1,57 @@
-## Sobre o projeto
+# T.Free — catálogo estático de IA em português
 
-**T.Free** reúne 32 ferramentas e é um catálogo de ferramentas de IA com opções gratuitas, faixas gratuitas e execução local. O aplicativo inteiro está em **`index.html`**, com HTML, CSS e JavaScript embutidos, sem bibliotecas externas, build ou backend obrigatório.
+35 ferramentas, 35 fichas próprias e 13 páginas de categoria e 3 guias originais. As páginas são HTML real, acessíveis sem JavaScript. Busca, filtros, comparação de até três ferramentas e guia local são melhorias progressivas. Não há backend obrigatório, cadastro, analytics ou anúncios ativos.
 
-Gratuito não significa ilimitado. Serviços podem exigir conta, aplicar cotas e restrições regionais, ou oferecer funções pagas. Ferramentas locais exigem instalação prévia, modelos compatíveis e recursos do computador. Licenças e comportamento variam por modelo; não há promessa universal de “sem censura”.
-
-## Funcionalidades
-
-- Busca por nome, descrição e palavras-chave.
-- Filtros por categoria, incluindo chat, imagem, áudio, vídeo, design, estudos, pesquisa, escrita, código e ferramentas locais/API.
-- Filtro de acesso fácil para serviços usados diretamente no navegador.
-- Cards com logos incorporados, selos, condições resumidas e links oficiais.
-- Destaque para opções de acesso fácil no navegador, sem instalar aplicativos nem configurar uma API. Algumas exigem conta e têm cotas.
-- Chat-guia por palavras-chave que filtra o catálogo, sem usar API.
-- Modo opcional de conversa com **Ollama local**, com verificação de conexão e mensagens de erro.
-- Layout responsivo, navegação por teclado e conteúdo em português brasileiro.
-
-## Como usar
-
-Baixe o arquivo `index.html` e abra no navegador. O catálogo e o chat-guia funcionam sem internet; visitar os sites oficiais exige conexão.
-
-Ou clone o repositório:
+## Desenvolvimento
 
 ```bash
-git clone https://github.com/thiagollipe-web/t.free.git
-cd t.free
+python3 scripts/build.py
+python3 -m http.server 8765 --bind 127.0.0.1
+# Em outro terminal, com Python Playwright e Chromium disponíveis:
+python3 -m unittest discover -s tests -v
+node --check assets/catalogue.js
+node --check assets/chat.js
+node tests/test_local_safety.js
 ```
 
-Para servir o mesmo arquivo localmente, se tiver Python instalado:
+Abra http://127.0.0.1:8765/. Para o site baixado, preserve a estrutura de pastas; não é mais um arquivo único. Nenhum npm/build remoto é necessário para servir as páginas. O gerador usa apenas a biblioteca padrão do Python. Playwright é necessário somente para os testes de navegador.
 
-```bash
-python3 -m http.server 8000 --bind 127.0.0.1
-```
+## Onde editar
 
-Abra **http://127.0.0.1:8000**. No Windows, também pode usar `py -m http.server 8000 --bind 127.0.0.1`.
+- `data/catalogue.json`: conteúdo, condições e fontes. Não invente cotas ou avaliações.
+- `data/brandLogos.json`: caminhos dos logos locais; atribuições em `ASSET-NOTICES.txt`.
+- `scripts/build.py`: geração das páginas, metadados e sitemap.
+- `templates/base.html`: estrutura, transparência e conteúdo institucional preservado.
+- `templates/catalogue.js`: busca, filtros e comparação; compilado para `assets/catalogue.js`.
+- `assets/chat.js`: guia por regras e integração opcional com Ollama local.
+- `assets/redesign.css`: identidade visual e responsive.
+
+Depois de editar fontes ou templates, rode o gerador e os testes. Não edite somente HTML gerado, pois a próxima geração o substitui.
+
+## SEO e GitHub Pages
+
+A origem configurada é `https://thiagollipe-web.github.io/t.free/`. Canonicals e URLs no sitemap respeitam o prefixo `/t.free/`. São 52 URLs HTML, sem dependência de renderização JavaScript para leitura dos cards e fichas. O sitemap não contém datas fictícias de atualização. Nenhuma nota/avaliação/preço foi inventado em dados estruturados.
+
+**robots.txt precisa estar na raiz do host**, `https://thiagollipe-web.github.io/robots.txt`. Um arquivo em `/t.free/robots.txt` não controla o rastreamento. Este projeto não altera o repositório do site raiz. Não é necessário ter robots.txt para permitir rastreamento; após publicação autorizada, envie diretamente `https://thiagollipe-web.github.io/t.free/sitemap.xml` ao Search Console da propriedade correta. Acesso à propriedade, verificação e envio dependem do proprietário. Não há garantia de indexação, posição ou tráfego.
+
+Antes de publicar: confirmar diff, rodar testes, publicar somente com autorização, verificar HTTP 200 de todas as URLs, canonical e sitemap no endereço final. Não alterar domínio nem criar anúncios/analytics nesta etapa.
+
+## Transparência e datas
+
+As informações do catálogo preservam a revisão editorial de 30/10/2026. O novo layout não significa novo teste de todos os serviços. ComfyUI, Canva AI e Microsoft Clipchamp receberam esclarecimentos de condições a partir das fontes oficiais verificadas em 31/10/2026. Referências continuam nas fichas. Não prometemos gratuidade ilimitada ou permanente. Modelos locais dependem de hardware e licenças; provedores externos e APIs podem cobrar.
 
 ## Ollama local
 
-1. Instale o [Ollama](https://ollama.com) e baixe um modelo adequado ao seu computador.
-2. Mantenha o servidor local do Ollama em execução.
-3. Abra o chat do T.Free e suas configurações.
-4. Informe `http://localhost:11434` ou `http://127.0.0.1:11434`, teste a conexão e escolha um modelo instalado.
-5. Selecione o modo Ollama local e envie sua mensagem.
+O guia padrão apenas filtra o catálogo por regras, não é IA generativa. A integração opcional exige instalar Ollama e um modelo local. Só aceita endpoints de loopback; rejeita modelos Cloud, redirecionamentos e URLs com credenciais. Nunca publique chaves. Se houver bloqueio CORS, permita apenas a origem usada, conforme https://docs.ollama.com/faq ; não use `OLLAMA_ORIGINS=*` nem exponha o servidor à internet. No celular, localhost é o próprio celular. Testes automatizados verificam o bloqueio de endpoints externos; não comprovam inferência real em um modelo instalado.
 
-**Ollama local não precisa de chave de API.** O T.Free não pede nem armazena chaves. Só aceita endpoints de loopback e rejeita modelos identificados como remotos/Cloud. O histórico fica apenas na memória da aba.
+## Privacidade
 
-Se o navegador bloquear o acesso a partir de `file://`, use o servidor local acima. Se ainda houver bloqueio de origem, consulte a [documentação oficial de CORS](https://docs.ollama.com/faq#how-can-i-allow-additional-web-origins-to-access-ollama) e permita apenas a origem utilizada, como `http://127.0.0.1:8000`. Não use `OLLAMA_ORIGINS=*` nem exponha o servidor à internet.
+Sem cookies próprios, armazenamento persistente, rastreadores ou scripts de publicidade. Seleção de comparação e histórico do guia ficam na memória da aba. Hospedagem e sites externos têm políticas próprias. O chat local envia conteúdo apenas ao endpoint escolhido e validado. Não envie dados sensíveis.
 
-No celular, `localhost` aponta para o próprio celular, não para o seu computador. O catálogo funciona no celular; o modo Ollama exige um servidor acessível no mesmo dispositivo e compatibilidade do navegador.
+## CI de revisão
 
-### E o Ollama Cloud?
+O workflow `Catalogue quality` executa somente em pull requests para main: gera o site, testa sintaxe/SEO/links, busca/filtros/comparação/guia e layouts sem JS em Chromium, sob o prefixo `/t.free/`. Também salva screenshots para revisão por 7 dias. Permissão apenas de leitura; nenhum deploy, secret ou aprovação automática. Para reproduzir, instale `playwright==1.62.0`, execute `python -m playwright install chromium` e rode os testes. Screenshots: `python scripts/screenshots.py`.
 
-[Ollama Cloud e Ollama local são serviços distintos](https://docs.ollama.com/api/introduction). A API Cloud usa autenticação e pode ter limites e custos. Esta versão não envia mensagens diretamente à API Cloud. Uma integração pública segura precisaria de backend para proteger a chave, contrariando a proposta de um único arquivo sem backend.
+## Identidade visual
 
-## Estrutura e personalização
-
-- `index.html`: aplicação completa; edite o array `catalogue` para atualizar ferramentas e as variáveis CSS para mudar as cores.
-- `README.md`: documentação, não é necessário para executar o aplicativo.
-
-As condições dos serviços devem ser conferidas nos links oficiais. Os links de referência estão no próprio HTML.
-
-## Verificação
-
-Busca, filtros, chat-guia, layout mobile e desktop e caminhos de erro são verificáveis sem serviços externos. A integração Ollama pode ser testada com respostas simuladas; a execução de um modelo real depende da instalação e do hardware de quem abrir o arquivo.
-
-## Contribuindo
-
-Faça um fork, atualize o catálogo ou o código e abra um pull request. Não inclua chaves, tokens ou outros segredos no repositório.
-
-## Licença
-
-MIT, conforme a licença declarada pelo projeto. As ferramentas e modelos vinculados mantêm suas próprias licenças e condições.
-
-### Logos e marcas
-
-Logos são usados para identificar os serviços, sem vínculo ou endosso. Marcas pertencem aos respectivos titulares. Os ativos incorporados vêm de fontes oficiais, [Simple Icons](https://github.com/simple-icons/simple-icons) (biblioteca CC0) e [Lobe Icons](https://github.com/lobehub/lobe-icons) (biblioteca MIT). Fontes e avisos aplicáveis estão incorporados no HTML. Duck.ai utiliza a marca DuckDuckGo; Mistral Vibe utiliza a marca Mistral.
-
-## Monetização: preparação, não ativação
-
-O site tem espaço reservado para publicidade e informações de privacidade. **Não há anúncios Google ativos, ID de editor configurado ou aprovação do AdSense confirmada.** Não use IDs fictícios nem copie o código de outra pessoa.
-
-Para ativar, o proprietário deve escolher sua conta Google/AdSense existente (o Google permite uma conta por editor), concluir os dados e termos necessários, adicionar e verificar o site e obter aprovação. Depois, o código real deve ser integrado com as configurações de consentimento aplicáveis e a política de privacidade atualizada. Não confunda um espaço reservado com receita ativa.
-
-O endereço atual é um projeto em GitHub Pages, sob `thiagollipe-web.github.io/t.free/`. O cadastro e o `ads.txt` precisam respeitar o domínio reconhecido pelo Google e o local correto na raiz; não publicar um `ads.txt` fictício dentro da pasta do projeto. Se for necessário alterar o site raiz ou usar um domínio próprio, confirmar o destino antes.
-
-Referências oficiais: [criar conta](https://support.google.com/adsense/answer/7402253?hl=pt-BR), [qualificação](https://support.google.com/adsense/answer/9724?hl=pt-BR), [uma conta por editor](https://support.google.com/adsense/answer/9729?hl=pt-BR), [privacidade obrigatória](https://support.google.com/adsense/answer/1348695?hl=pt-BR). Aprovação e receita não são garantidas.
+A aparência original de T.Free (base `7abc261`) foi mantida por solicitação do responsável: CSS original, hero, navegação, cores e tipografia. `assets/redesign.css` contém somente compatibilidade para páginas estáticas e novos controles, sem substituir a identidade original. A expansão do catálogo/modelos está aguardando definição; as 32 ferramentas existentes foram preservadas; Hermes Agent, OpenCode e Morphic foram acrescentados com fontes oficiais, tipo e dependências explícitas. Modelos de pesos não foram adicionados.

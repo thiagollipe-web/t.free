@@ -1,0 +1,964 @@
+[
+  {
+    "name": "ChatGPT",
+    "mark": "C",
+    "category": "Chat",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Converse, explore ideias e receba ajuda para escrever ou estudar. Recursos e limites variam conforme o plano.",
+    "url": "https://chatgpt.com/",
+    "keywords": "texto estudar redacao assistente conversa",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Gemini",
+    "mark": "G",
+    "category": "Chat",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Assistente do Google para ideias, textos e perguntas do dia a dia. Acesso e recursos dependem da conta e região.",
+    "url": "https://gemini.google.com/",
+    "keywords": "google texto estudar assistente",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Claude",
+    "mark": "✳",
+    "category": "Chat",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas"
+    ],
+    "description": "Assistente para escrita, análise e programação. O uso gratuito está sujeito a limites de disponibilidade.",
+    "url": "https://claude.ai/",
+    "keywords": "texto documentos programar codigo analise",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Ollama",
+    "mark": "O",
+    "category": "Local/Offline",
+    "tags": [
+      "Execução local",
+      "Instalação"
+    ],
+    "description": "Execute modelos no seu computador. Após baixar o modelo, a inferência local pode funcionar sem internet.",
+    "url": "https://ollama.com/",
+    "keywords": "offline privacidade local linux windows mac modelos sem censura controle",
+    "kind": "runtime",
+    "execution": "local",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Execução local; confira as condições do aplicativo e a licença do modelo.",
+      "model": "Modelos locais dependem dos arquivos e licenças escolhidos. Integrações remotas podem ter cobrança própria.",
+      "hosting": "Exige computador compatível, armazenamento, instalação e energia.",
+      "dependencies": [
+        "Hardware e energia",
+        "Licença e recursos do modelo escolhido"
+      ]
+    }
+  },
+  {
+    "name": "LM Studio",
+    "mark": "LM",
+    "category": "Local/Offline",
+    "tags": [
+      "Uso local",
+      "Instalação"
+    ],
+    "description": "Interface para descobrir e executar modelos locais. Compatibilidade, memória e licença dependem do modelo escolhido.",
+    "url": "https://lmstudio.ai/",
+    "keywords": "offline privacidade modelos local sem censura controle",
+    "kind": "app",
+    "execution": "local",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Execução local; confira as condições do aplicativo e a licença do modelo.",
+      "model": "Modelos locais dependem dos arquivos e licenças escolhidos. Integrações remotas podem ter cobrança própria.",
+      "hosting": "Exige computador compatível, armazenamento, instalação e energia.",
+      "dependencies": [
+        "Hardware e energia",
+        "Licença e recursos do modelo escolhido"
+      ]
+    }
+  },
+  {
+    "name": "Jan",
+    "mark": "J",
+    "category": "Local/Offline",
+    "tags": [
+      "Código aberto",
+      "Instalação"
+    ],
+    "description": "Assistente com modelos locais e opções de conexão externa. Escolha um modelo compatível com seu computador.",
+    "url": "https://jan.ai/",
+    "keywords": "offline privacidade local sem censura controle opensource",
+    "kind": "app",
+    "execution": "local",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Execução local; confira as condições do aplicativo e a licença do modelo.",
+      "model": "Modelos locais dependem dos arquivos e licenças escolhidos. Integrações remotas podem ter cobrança própria.",
+      "hosting": "Exige computador compatível, armazenamento, instalação e energia.",
+      "dependencies": [
+        "Hardware e energia",
+        "Licença e recursos do modelo escolhido"
+      ]
+    }
+  },
+  {
+    "name": "Google AI Studio",
+    "mark": "AI",
+    "category": "API/Dev",
+    "tags": [
+      "Faixa gratuita",
+      "Cotas / região"
+    ],
+    "description": "Experimente modelos Gemini e protótipos. Gratuidade da API depende do modelo, região e limites vigentes.",
+    "url": "https://aistudio.google.com/",
+    "keywords": "api desenvolvedor dev programacao gemini",
+    "kind": "service",
+    "execution": "api",
+    "aliases": [
+      "AI Studio"
+    ],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "A ferramenta não inclui garantia de inferência gratuita para todo modelo.",
+      "model": "Provedores de API podem cobrar por uso; cotas gratuitas, quando disponíveis, têm condições.",
+      "hosting": "Seu aplicativo pode precisar de hospedagem própria. Execução local exige hardware.",
+      "dependencies": [
+        "Modelo ou provedor de API escolhido",
+        "Infraestrutura do projeto"
+      ]
+    }
+  },
+  {
+    "name": "GroqCloud",
+    "mark": "g",
+    "category": "API/Dev",
+    "tags": [
+      "Faixa gratuita",
+      "Cotas"
+    ],
+    "description": "Plataforma de inferência para desenvolvedores. Confira os modelos disponíveis e limites do plano gratuito.",
+    "url": "https://console.groq.com/",
+    "keywords": "api dev desenvolvedor velocidade inferencia",
+    "kind": "service",
+    "execution": "api",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "A ferramenta não inclui garantia de inferência gratuita para todo modelo.",
+      "model": "Provedores de API podem cobrar por uso; cotas gratuitas, quando disponíveis, têm condições.",
+      "hosting": "Seu aplicativo pode precisar de hospedagem própria. Execução local exige hardware.",
+      "dependencies": [
+        "Modelo ou provedor de API escolhido",
+        "Infraestrutura do projeto"
+      ]
+    }
+  },
+  {
+    "name": "Hugging Face",
+    "mark": "HF",
+    "category": "API/Dev",
+    "tags": [
+      "Modelos abertos",
+      "Varia por projeto"
+    ],
+    "description": "Explore modelos, datasets e demonstrações da comunidade. Nem todo Space ou serviço de inferência é gratuito.",
+    "url": "https://huggingface.co/",
+    "keywords": "modelos datasets api imagem codigo comunidade",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "ComfyUI",
+    "mark": "Co",
+    "category": "Imagem",
+    "tags": [
+      "Código aberto",
+      "Execução local"
+    ],
+    "description": "Monte fluxos visuais de geração de imagens. O uso local exige instalação, modelos e hardware adequados.",
+    "url": "https://www.comfy.org/",
+    "keywords": "imagem imagens arte desenho local offline difusao",
+    "conditions": "Código aberto · Execução local. Partner Nodes usam créditos pagos; Comfy Cloud é um serviço pago separado do núcleo local gratuito.",
+    "kind": "app",
+    "execution": "local",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Execução local; confira as condições do aplicativo e a licença do modelo.",
+      "model": "Modelos locais dependem dos arquivos e licenças escolhidos. Integrações remotas podem ter cobrança própria.",
+      "hosting": "Exige computador compatível, armazenamento, instalação e energia.",
+      "dependencies": [
+        "Hardware e energia",
+        "Licença e recursos do modelo escolhido",
+        "Partner Nodes e Comfy Cloud são serviços pagos opcionais"
+      ]
+    }
+  },
+  {
+    "name": "Perplexity",
+    "mark": "P",
+    "category": "Busca",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas"
+    ],
+    "description": "Busque respostas com referências na web. Confira as fontes e as diferenças entre pesquisa gratuita e paga.",
+    "url": "https://www.perplexity.ai/",
+    "keywords": "pesquisa fontes web busca estudar",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Continue",
+    "mark": "⏩",
+    "category": "Código",
+    "tags": [
+      "Código aberto",
+      "Modelo à parte"
+    ],
+    "description": "Assistente de programação que pode conectar modelos locais. Provedores externos podem cobrar pelo uso.",
+    "url": "https://www.continue.dev/",
+    "keywords": "codigo programar programacao desenvolvedor vscode local offline",
+    "kind": "app",
+    "execution": "hybrid",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "A ferramenta não inclui garantia de inferência gratuita para todo modelo.",
+      "model": "Provedores de API podem cobrar por uso; cotas gratuitas, quando disponíveis, têm condições.",
+      "hosting": "Seu aplicativo pode precisar de hospedagem própria. Execução local exige hardware.",
+      "dependencies": [
+        "Modelo ou provedor de API escolhido",
+        "Infraestrutura do projeto"
+      ]
+    }
+  },
+  {
+    "name": "Duck.ai",
+    "mark": "D",
+    "category": "Chat",
+    "tags": [
+      "Acesso gratuito",
+      "Limite diário"
+    ],
+    "description": "Converse com modelos de IA diretamente no navegador. O plano gratuito está sujeito a limites diários.",
+    "url": "https://duck.ai/",
+    "keywords": "duckduckgo chat facil navegador texto privacidade",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Microsoft Copilot",
+    "mark": "MC",
+    "category": "Chat",
+    "tags": [
+      "Acesso gratuito",
+      "Conta pode ser exigida"
+    ],
+    "description": "Assistente da Microsoft para perguntas e criação de textos pelo navegador. Recursos e limites variam conforme a conta.",
+    "url": "https://copilot.microsoft.com/",
+    "keywords": "microsoft copilot chat facil navegador estudar escrever",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [
+      "Bing Chat"
+    ],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Mistral Vibe",
+    "mark": "M",
+    "category": "Chat",
+    "tags": [
+      "Plano gratuito",
+      "Limites de uso"
+    ],
+    "description": "Assistente da Mistral, anteriormente chamado Le Chat. Converse e explore ideias online; o plano gratuito tem limites.",
+    "url": "https://chat.mistral.ai/",
+    "keywords": "mistral vibe le chat facil navegador texto",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [
+      "Le Chat",
+      "Mistral Le Chat"
+    ],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "DeepSeek",
+    "mark": "D",
+    "category": "Chat",
+    "tags": [
+      "Acesso gratuito",
+      "Disponibilidade variável"
+    ],
+    "description": "Assistente de IA com acesso pela web e aplicativo. Pode exigir conta; disponibilidade e condições podem mudar.",
+    "url": "https://chat.deepseek.com/",
+    "keywords": "deepseek chat facil navegador raciocinio programar",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Qwen",
+    "mark": "Q",
+    "category": "Chat",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas / planos"
+    ],
+    "description": "Converse, escreva e explore recursos do Qwen no navegador. Há limites de uso e opções pagas conforme o plano.",
+    "url": "https://chat.qwen.ai/",
+    "keywords": "qwen chat facil navegador texto multimodal",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Canva AI",
+    "mark": "Ca",
+    "category": "Design",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Crie peças visuais, textos e conteúdo com IA dentro de um editor fácil de usar.",
+    "url": "https://www.canva.com/canva-ai/",
+    "keywords": "Design e escrita Canva AI facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano gratuito com cota mensal. Até 20 usos de ferramentas Standard OU Premium em cota compartilhada mensal; tarefas complexas podem consumir mais. Sem ferramentas Ultra. Limites e pausas variam por recurso. Conta Canva necessária. Aplicativos de terceiros podem cobrar separadamente das cotas das ferramentas próprias do Canva.",
+    "source": "https://www.canva.com/help/ai-access/",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Adobe Firefly",
+    "mark": "Ad",
+    "category": "Imagem",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Gere e transforme imagens a partir de descrições, sem instalar editor.",
+    "url": "https://firefly.adobe.com/",
+    "keywords": "Imagens e design Adobe Firefly facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano gratuito com gerações limitadas. Gerações gratuitas diárias limitadas em modelos selecionados. Recursos premium de vídeo/áudio podem oferecer apenas amostras, não incluídos como gratuidade recorrente garantida. Conta Adobe necessária.",
+    "source": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Ideogram",
+    "mark": "Id",
+    "category": "Imagem",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Crie imagens, cartazes e composições visuais com texto usando comandos simples.",
+    "url": "https://ideogram.ai/",
+    "keywords": "Imagens e design Ideogram facil navegador online gratis",
+    "easy": true,
+    "conditions": "Créditos semanais para contas gratuitas elegíveis. Cota semanal variável. É necessário entrar com Google, Apple ou Microsoft para elegibilidade; a quantidade de créditos varia e a privacidade das criações gratuitas não é garantida. Login Google, Apple ou Microsoft necessário para créditos gratuitos.",
+    "source": "https://ideogram.ai/pricing/",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Leonardo.Ai",
+    "mark": "Le",
+    "category": "Imagem",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Gere ilustrações e imagens criativas com presets e interface visual.",
+    "url": "https://app.leonardo.ai/",
+    "keywords": "Imagens e design Leonardo.Ai facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano gratuito com tokens diários. 150 tokens por dia; acesso de modelos Auto Only, qualidade básica e criações públicas. Tokens não equivalem a número fixo de imagens. Conta Leonardo necessária.",
+    "source": "https://leonardo.ai/pricing",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Microsoft Designer",
+    "mark": "Mi",
+    "category": "Imagem",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Crie imagens, convites e posts e faça ajustes de fotos com ajuda de IA.",
+    "url": "https://designer.microsoft.com/",
+    "keywords": "Imagens e design Microsoft Designer facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano gratuito com créditos mensais. Créditos renovados mensalmente; quantidade não especificada na página consultada. Recursos e disponibilidade variam por região, idade e plataforma. Conta Microsoft pessoal necessária.",
+    "source": "https://www.microsoft.com/en-us/microsoft-365/microsoft-designer",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "ElevenLabs",
+    "mark": "El",
+    "category": "Áudio",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Transforme texto em fala e experimente ferramentas de voz e efeitos sonoros.",
+    "url": "https://elevenlabs.io/",
+    "keywords": "Áudio e voz ElevenLabs facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano gratuito com créditos mensais. 10 mil créditos por mês compartilhados entre recursos; consumo varia por modelo/tarefa. Licença comercial não incluída no Free. Conta ElevenLabs necessária.",
+    "source": "https://elevenlabs.io/pricing",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Suno",
+    "mark": "Su",
+    "category": "Áudio",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Crie músicas a partir de uma ideia ou letra para experimentar e compartilhar por link.",
+    "url": "https://suno.com/",
+    "keywords": "Música e áudio Suno facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano gratuito com créditos diários. 50 créditos diários; modelos e recursos gratuitos selecionados. Sem direitos comerciais e sem downloads mensais de músicas no plano Free atual; compartilhamento por link. Conta Suno necessária.",
+    "source": "https://suno.com/pricing",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Krea",
+    "mark": "Kr",
+    "category": "Imagem",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Explore geração visual em tempo real e ferramentas de melhoria de imagem.",
+    "url": "https://www.krea.ai/",
+    "keywords": "Imagens e design Krea facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano gratuito com unidades diárias. 100 unidades de computação por dia; consumo e acesso dependem do recurso/modelo. Alguns recursos e modelos são exclusivos dos planos pagos. Conta Krea necessária.",
+    "source": "https://www.krea.ai/pricing",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Microsoft Clipchamp",
+    "mark": "Mi",
+    "category": "Vídeo",
+    "tags": [
+      "Acesso gratuito",
+      "Conta / cotas"
+    ],
+    "description": "Edite vídeos, gere narração por IA e adicione legendas automáticas no navegador.",
+    "url": "https://app.clipchamp.com/",
+    "keywords": "Vídeo e áudio Microsoft Clipchamp facil navegador online gratis",
+    "easy": true,
+    "conditions": "Editor gratuito com recursos de IA. Inclui ferramentas de edição de vídeo/áudio com IA; exportação 4K, acervo premium e kit de marca são pagos. Recursos de IA estão sujeitos às condições do serviço. Conta Microsoft pessoal necessária. É um editor com recursos de IA, não uma promessa de gerar um vídeo inteiro por prompt; exportação em 4K exige plano pago.",
+    "source": "https://clipchamp.com/en/pricing/",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Gemini Notebook (antigo NotebookLM)",
+    "mark": "Ge",
+    "category": "Estudos",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas / condições"
+    ],
+    "description": "Converse com suas fontes e transforme materiais em resumos, áudios, mapas mentais e recursos de estudo.",
+    "url": "https://notebook.google.com/",
+    "keywords": "Gemini Notebook (antigo NotebookLM) Estudos e pesquisa facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano gratuito com limites renováveis. Cota computacional padrão; renova a cada 5 horas até o limite semanal. Sem quantidade fixa de mensagens publicada. Conta Google.",
+    "source": "https://support.google.com/gemininotebook/answer/17670842?hl=en",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [
+      "NotebookLM",
+      "Google NotebookLM"
+    ],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Elicit",
+    "mark": "El",
+    "category": "Pesquisa",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas / condições"
+    ],
+    "description": "Encontre artigos científicos, compare resultados e obtenha resumos com referências às fontes.",
+    "url": "https://elicit.com/",
+    "keywords": "Elicit Pesquisa científica facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano Basic gratuito contínuo. Busca, resumos e conversa com artigos de texto completo sem limite; Research Agent e relatórios têm uso limitado. Cadastro gratuito.",
+    "source": "https://elicit.com/pricing",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Consensus",
+    "mark": "Co",
+    "category": "Pesquisa",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas / condições"
+    ],
+    "description": "Pesquise perguntas em linguagem natural e explore respostas fundamentadas em estudos científicos.",
+    "url": "https://consensus.app/",
+    "keywords": "Consensus Pesquisa científica facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano Free gratuito contínuo. Buscas de artigos ilimitadas; por mês: 10 mensagens Pro, 3 Deep Reviews e 10 Study Snapshots. Inclui 30 chamadas API/MCP mensais. Cadastro gratuito.",
+    "source": "https://help.consensus.app/en/articles/10087865-subscription-plans",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "QuillBot",
+    "mark": "Qu",
+    "category": "Escrita",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas / condições"
+    ],
+    "description": "Reescreva trechos, revise gramática e gere resumos para melhorar seus textos.",
+    "url": "https://quillbot.com/",
+    "keywords": "QuillBot Escrita e revisão facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano Free gratuito contínuo. Paráfrases de até 125 palavras em 2 modos; resumos de até 1.200 palavras; consultas diárias limitadas ao AI Chat. Conta gratuita para os recursos do plano; algumas ferramentas podem abrir sem login.",
+    "source": "https://help.quillbot.com/hc/en-us/articles/360058341753-What-s-the-difference-between-a-free-and-a-Premium-account",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "DeepL Write",
+    "mark": "De",
+    "category": "Escrita",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas / condições"
+    ],
+    "description": "Melhore a clareza, gramática e escolha de palavras, inclusive em português brasileiro.",
+    "url": "https://www.deepl.com/write",
+    "keywords": "DeepL Write Escrita e revisão facil navegador online gratis",
+    "easy": true,
+    "conditions": "Uso gratuito contínuo sem conta. Até 1.500 caracteres por texto sem conta. API Write não incluída no plano API Free. Não exige conta para o uso gratuito básico.",
+    "source": "https://support.deepl.com/hc/en-us/articles/6318834492700-About-DeepL-Write",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "ResearchRabbit",
+    "mark": "Re",
+    "category": "Pesquisa",
+    "tags": [
+      "Acesso gratuito",
+      "Cotas / condições"
+    ],
+    "description": "Descubra artigos relacionados e visualize as conexões entre trabalhos para organizar sua revisão de literatura.",
+    "url": "https://www.researchrabbit.ai/",
+    "keywords": "ResearchRabbit Pesquisa científica facil navegador online gratis",
+    "easy": true,
+    "conditions": "Plano Free Forever. Busca, mapas de citações, coleções e importação Zotero/BibTeX; até 50 artigos iniciais por busca. Recursos avançados no RR+. Cadastro gratuito.",
+    "source": "https://learn.researchrabbit.ai/en/articles/12865509-researchrabbit-free-tier",
+    "kind": "service",
+    "execution": "hosted",
+    "aliases": [],
+    "alternativesTo": [],
+    "reviewedAt": "2026-10-30",
+    "costs": {
+      "softwareFee": null,
+      "software": "Acesso e recursos sujeitos às condições do provedor descritas nesta ficha.",
+      "model": "Cotas e eventuais cobranças são definidas pelo serviço; confira a fonte oficial.",
+      "hosting": "O acesso pelo site oficial não exige hospedar uma aplicação própria.",
+      "dependencies": []
+    }
+  },
+  {
+    "name": "Hermes Agent",
+    "mark": "H",
+    "category": "Agentes",
+    "tags": [
+      "Código aberto",
+      "Modelo à parte"
+    ],
+    "description": "Organize tarefas e automatize fluxos com um agente configurado no seu ambiente e conectado a um modelo compatível.",
+    "url": "https://hermes-agent.nousresearch.com/",
+    "keywords": "agente automação tarefas assistente pessoal nous",
+    "easy": false,
+    "conditions": "O software Hermes Agent usa licença MIT. O provedor de linguagem pode cobrar por uso; execução com modelo local exige hardware e energia. Ferramentas externas podem ter custos próprios. Não inclui assinatura ChatGPT nem instalação automática.",
+    "source": "https://hermes-agent.nousresearch.com/docs/reference/faq",
+    "kind": "agent",
+    "execution": "hybrid",
+    "aliases": [
+      "Hermes",
+      "Nous Hermes Agent"
+    ],
+    "alternativesTo": [
+      {
+        "name": "ChatGPT",
+        "scope": "Assistência e automação de tarefas, com modelo e ferramentas configurados por você. Não equivale a todos os recursos do serviço ChatGPT."
+      }
+    ],
+    "reviewedAt": "2026-10-31",
+    "costs": {
+      "softwareFee": null,
+      "software": "Código sob licença MIT; gratuito para obter e usar conforme a licença.",
+      "model": "O provedor LLM/API pode cobrar por uso. Um modelo local depende do seu hardware e da licença dos pesos.",
+      "hosting": "É necessário um ambiente de execução configurado; computador ou servidor e energia têm custos.",
+      "dependencies": [
+        "Provedor LLM/API ou hardware para modelo local",
+        "Serviços e ferramentas externas opcionais"
+      ]
+    }
+  },
+  {
+    "name": "OpenCode",
+    "mark": "O",
+    "category": "Código",
+    "tags": [
+      "Código aberto",
+      "API ou modelo local"
+    ],
+    "description": "Trabalhe em tarefas de programação com um agente que pode se conectar a provedores de IA ou a um modelo local compatível.",
+    "url": "https://opencode.ai/",
+    "keywords": "agente programação terminal código desenvolvimento",
+    "easy": false,
+    "conditions": "O software é aberto sob licença MIT e oferece uma seleção de modelos gratuitos, conforme a oferta atual. Outros provedores podem exigir conta, assinatura ou chave de API. Modelos locais exigem recursos próprios. O site informa condições próprias de uso de dados nos modelos gratuitos: confira a política antes de enviar conteúdo sensível. Não há instalação automática pelo T.Free.",
+    "source": "https://opencode.ai/",
+    "kind": "agent",
+    "execution": "hybrid",
+    "aliases": [
+      "Open Code"
+    ],
+    "alternativesTo": [
+      {
+        "name": "Cursor",
+        "scope": "Assistência em tarefas de programação; interface, integrações e recursos diferem."
+      },
+      {
+        "name": "GitHub Copilot",
+        "scope": "Apoio à programação com modelo escolhido; não substitui automaticamente todas as integrações ou planos."
+      }
+    ],
+    "reviewedAt": "2026-10-31",
+    "costs": {
+      "softwareFee": null,
+      "software": "Software sob licença MIT, gratuito conforme os termos da licença.",
+      "model": "Há uma seleção de modelos gratuitos oferecida pelo projeto. API, conta ou assinatura externa depende do provedor; também pode usar Ollama local compatível.",
+      "hosting": "Exige instalação e configuração do ambiente; modelos locais usam recursos do computador.",
+      "dependencies": [
+        "Provedor de API/assinatura escolhido ou modelo local",
+        "Hardware e energia"
+      ]
+    }
+  },
+  {
+    "name": "Morphic",
+    "mark": "M",
+    "category": "Busca",
+    "tags": [
+      "Código aberto",
+      "Hospedagem própria"
+    ],
+    "description": "Monte uma experiência de busca com respostas de IA usando um aplicativo aberto, seu modelo e a infraestrutura que você configurar.",
+    "url": "https://github.com/miurla/morphic",
+    "keywords": "busca pesquisa respostas fontes aplicação self hosted",
+    "easy": false,
+    "conditions": "O projeto usa licença Apache-2.0. Hospedar e executar o aplicativo exige infraestrutura e um modelo; APIs e busca podem ter cobrança. Há suporte a Ollama e a provedores externos. Não prometemos acesso gratuito permanente a uma instância pública.",
+    "source": "https://github.com/miurla/morphic",
+    "kind": "app",
+    "execution": "self-hosted",
+    "aliases": [
+      "Morphic AI"
+    ],
+    "alternativesTo": [
+      {
+        "name": "Perplexity",
+        "scope": "Busca com respostas de IA; requer configuração própria e pode ter cobertura, recursos e custos diferentes."
+      }
+    ],
+    "reviewedAt": "2026-10-31",
+    "costs": {
+      "softwareFee": null,
+      "software": "Código sob licença Apache-2.0; gratuito conforme os termos da licença.",
+      "model": "Modelo local ou API configurada por você; provedores externos podem cobrar.",
+      "hosting": "Hospedagem própria, rede e manutenção. Ferramentas de busca externas podem acrescentar custos.",
+      "dependencies": [
+        "Infraestrutura de hospedagem",
+        "Modelo/API e provedor de busca escolhidos"
+      ]
+    }
+  }
+]

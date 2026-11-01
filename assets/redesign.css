@@ -1,0 +1,38 @@
+/* Compatibility for static pages and new controls only.
+   The original T.Free visual identity lives unchanged in legacy.css (7abc261). */
+[hidden]{display:none!important}
+.card .tool-title{display:inline;border:0;padding:0;font:inherit;text-decoration:none}
+.category-links{display:flex;flex-wrap:wrap;gap:8px 15px;margin:10px 0 24px;font-size:12px;color:var(--muted)}
+.category-links-title{font-size:12px;color:var(--muted);margin:10px 0 0}
+.compare-pick{display:flex;align-items:center;gap:7px;margin-top:14px;font-size:12px;cursor:pointer}
+.compare-pick input{width:18px;height:18px;accent-color:var(--ink)}
+.compare-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:24px 0;padding:20px;border:1px solid var(--line);border-radius:8px;background:#eaece0;font-size:13px}
+.compare-toolbar p{margin:0}
+.compare-toolbar button{font-size:12px;min-height:40px;padding:8px 12px;background:var(--paper);border:1px solid var(--ink);border-radius:5px}
+#compare-result{flex-basis:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.compare-table{border-collapse:collapse;width:100%;min-width:600px;margin:16px 0;background:#fffdf8;font-size:13px}
+.compare-table th,.compare-table td{padding:14px;text-align:left;vertical-align:top;border:1px solid var(--line);min-width:150px}
+.compare-table th{background:#eeefe5}
+.compare-table caption{text-align:left;font-weight:750;padding:12px 0}
+.compare-scroll-hint{font-size:12px;color:var(--muted);padding-top:10px}
+.breadcrumbs{height:auto;display:flex;flex-wrap:wrap;gap:8px;padding:24px 0;font-size:12px;color:var(--muted)}
+.detail-hero{padding:20px 0 32px;border-bottom:1px solid var(--line)}
+.detail-hero h1{font-size:clamp(40px,6vw,72px);letter-spacing:-3px;overflow-wrap:anywhere}
+.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-top:24px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:12px 18px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);border-radius:8px;text-decoration:none;font-size:13px;font-weight:750}
+.detail-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:40px;padding:36px 0}
+.prose{max-width:760px;line-height:1.75;margin:30px 0}
+.prose h2{margin:24px 0 14px;font-size:25px}
+.prose p{color:var(--muted);margin:0 0 20px}
+.prose a{overflow-wrap:anywhere;text-underline-offset:3px}
+.detail-sidebar{padding:23px;border:1px solid var(--line);background:#fffdf8;border-radius:12px;font-size:13px}
+.detail-sidebar h2{font-size:21px;margin:16px 0}
+.detail-sidebar dt{font-weight:700;margin-top:12px}
+.detail-sidebar dd{margin:4px 0 12px;color:var(--muted)}
+.resource-links{display:grid;gap:10px;padding-left:20px;font-size:14px}
+@media(max-width:700px){.detail-layout{grid-template-columns:1fr;gap:24px}.detail-sidebar{order:-1}.detail-hero h1{letter-spacing:-2px}.chat-toggle{position:static;display:block;width:100%;margin:0 0 14px;box-shadow:none}.chat{bottom:16px;max-height:calc(100dvh - 32px)}}
+@media(max-width:480px){.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .button{width:100%}.compare-toolbar{padding:14px}}
+/* Original 56px headline overflows narrow screens; retain its identity without horizontal scrolling. */
+@media(max-width:420px){.hero h1{font-size:clamp(36px,12.9vw,54px)}}
+
+.cost-breakdown dt{font-weight:750;margin-top:14px}.cost-breakdown dd{margin:4px 0 16px;color:var(--muted)}
