@@ -28,6 +28,7 @@ jobs:
           git diff --exit-code
           node --check assets/catalogue.js
           node --check assets/chat.js
+          node --check assets/prompts.js
           node tests/test_local_safety.js
       - name: Test browser flows, no-JS and static SEO
         run: python -m unittest discover -s tests -v

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "hermes-instalar-configurar",
+    "tool": "Hermes Agent",
+    "title": "Preparar o Hermes Agent e escolher o modelo",
+    "kind": "setup",
+    "text": "Quero preparar o Hermes Agent, da Nous Research, no meu computador, usando o projeto oficial NousResearch/hermes-agent. Primeiro identifique meu sistema operacional, os recursos disponíveis e meu objetivo. Consulte a documentação oficial em https://hermes-agent.nousresearch.com/docs/ e proponha a instalação adequada, sem executá-la antes de eu confirmar. Ajude-me a escolher entre um modelo local compatível e um provedor externo: explique os requisitos de memória, os custos de hardware e energia no uso local e a cobrança de API quando aplicável. Após minha escolha e autorização, oriente a configuração segura do modelo. Ao concluir, proponha uma conversa curta de teste, mostre como conferir se o agente iniciou corretamente e registre o resultado real. Não habilite mensagens, navegação ou outras integrações sem minha autorização específica.",
+    "source": "https://hermes-agent.nousresearch.com/docs/",
+    "reference": "https://gratos.app/outils/hermes-agent",
+    "reviewedAt": "2026-11-01"
+  },
+  {
+    "id": "hermes-revisar-permissoes",
+    "tool": "Hermes Agent",
+    "title": "Revisar e limitar as permissões do Hermes",
+    "kind": "permissions",
+    "text": "Quero revisar as permissões de uma instalação existente do Hermes Agent, projeto NousResearch/hermes-agent. Consulte a documentação oficial e o registro real de ferramentas da versão instalada; não suponha que uma lista parcial da interface ou um nome lembrado de outra versão represente todas as permissões. Liste as ferramentas atualmente disponíveis, explique quais podem ler ou modificar arquivos, executar ações externas ou enviar mensagens e pergunte quais devo manter. Proponha uma lista explícita de permissões mínimas e aguarde minha confirmação antes de mudar a configuração. Depois da alteração autorizada, verifique o estado efetivo com o mecanismo de diagnóstico compatível com essa versão e apresente evidências das ferramentas ativas e desativadas. Se não conseguir provar uma restrição, sinalize a pendência em vez de declarar o ambiente seguro.",
+    "source": "https://hermes-agent.nousresearch.com/docs/",
+    "reference": "https://gratos.app/outils/hermes-agent",
+    "reviewedAt": "2026-11-01"
+  },
+  {
+    "id": "opencode-instalar-configurar",
+    "tool": "OpenCode",
+    "title": "Preparar o OpenCode e conectar um modelo",
+    "kind": "setup",
+    "text": "Quero começar a usar o OpenCode, agente de programação do projeto oficial anomalyco/opencode. Identifique meu sistema operacional e as ferramentas já instaladas. Consulte https://opencode.ai/docs/ e proponha o método oficial apropriado para a versão atual; não instale nem substitua versões existentes sem minha confirmação. Depois da instalação autorizada, confira a versão e explique duas opções de modelo: provedor externo com seus próprios custos e condições, ou execução local com Ollama ou LM Studio, sujeita ao hardware disponível. Pergunte qual opção desejo e consulte https://opencode.ai/docs/providers/ antes de orientar a conexão. Nunca presuma que uma assinatura de chatbot libera API ou integração de terceiros. Para testar, proponha uma pasta pequena e sem dados sensíveis, comece com uma leitura ou resumo do projeto e não autorize alterações automaticamente. Mostre o resultado real e os indicadores de consumo disponíveis, sem inventar um custo quando ele não for informado.",
+    "source": "https://opencode.ai/docs/",
+    "reference": "https://gratos.app/outils/opencode",
+    "reviewedAt": "2026-11-01"
+  },
+  {
+    "id": "morphic-preparar-uso",
+    "tool": "Morphic",
+    "title": "Escolher como usar e preparar o Morphic",
+    "kind": "setup",
+    "text": "Quero usar o Morphic, mecanismo de busca com IA do projeto oficial miurla/morphic. Pergunte primeiro se prefiro experimentar a instância pública ou preparar uma instalação própria. Não garanta gratuidade ilimitada ou disponibilidade da demonstração. Para instalação própria, consulte https://github.com/miurla/morphic e a documentação atual de Docker, configuração e privacidade. Explique os componentes necessários, os requisitos do computador, o armazenamento e as opções de modelo: API com cobrança do provedor ou modelo local compatível. Apresente o plano e espere minha autorização antes de baixar arquivos ou criar serviços. Oriente a configuração de segredos fora da conversa. Após a preparação autorizada, ajude-me a abrir a interface, selecionar o modelo e fazer uma primeira busca simples, conferindo as fontes da resposta. Explique quais dados podem sair do computador, como habilitar histórico e contas caso eu queira, e como atualizar ou desligar os serviços.",
+    "source": "https://github.com/miurla/morphic",
+    "reference": "https://gratos.app/outils/morphic",
+    "reviewedAt": "2026-11-01"
+  }
+]
