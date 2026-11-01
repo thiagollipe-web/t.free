@@ -201,3 +201,5 @@ SOFTWARE.
 
 
 Hermes Agent, OpenCode e Morphic: monogramas de identificação originais do T.Free, não logos oficiais nem indicação de parceria.
+
+assets/caramelo.svg: ilustração vetorial original criada para T.Free. Não deriva do mascote Gratos.
