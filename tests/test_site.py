@@ -64,7 +64,7 @@ class BrowserTests(unittest.TestCase):
   context=self.browser.new_context(permissions=['clipboard-read','clipboard-write']);page=context.new_page();page.goto(self.url)
   checks=page.locator('[data-select-prompt]');self.assertEqual(checks.count(),4)
   checks.nth(2).check();checks.nth(0).check();page.locator('#prompt-open').click()
-  self.assertTrue(page.locator('#prompt-dialog').is_visible());value=page.locator('#prompt-preview-text').input_value()
+  self.assertTrue(page.locator('#prompt-dialog').is_visible());self.assertEqual(page.locator('#prompt-preview-text').evaluate('(e)=>e.scrollTop'),0);self.assertEqual(page.locator('#prompt-preview-text').evaluate('(e)=>e.selectionStart'),0);value=page.locator('#prompt-preview-text').input_value()
   self.assertLess(value.index('## 1. Preparar o Hermes'),value.index('## 2. Preparar o OpenCode'))
   self.assertEqual(value.count('Antes de qualquer alteração'),1);self.assertIn('autorização explícita',value)
   calls=[];page.on('request',lambda request:calls.append(request.url))
